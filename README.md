@@ -3,8 +3,8 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/minecraft-gilde/jailcommandguard/ci.yml?branch=main&label=build)](https://github.com/minecraft-gilde/jailcommandguard/actions)
 [![Release](https://img.shields.io/github/v/release/minecraft-gilde/jailcommandguard?label=release)](https://github.com/minecraft-gilde/jailcommandguard/releases)
 [![License](https://img.shields.io/github/license/minecraft-gilde/jailcommandguard)](LICENSE)
-![Java](https://img.shields.io/badge/Java-21-orange)
-![Paper](https://img.shields.io/badge/Paper-1.20%2B-blue)
+![Java](https://img.shields.io/badge/Java-25-orange)
+![Paper](https://img.shields.io/badge/Paper-26.1.2-blue)
 ![Folia](https://img.shields.io/badge/Folia-supported-brightgreen)
 [![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white)](https://discord.minecraft-gilde.de)
 
@@ -30,10 +30,10 @@ Zusätzlich kann das Plugin regelmäßig die verbleibende Jail-Zeit im Chat anze
 
 | Komponente | Status |
 | --- | --- |
-| Paper API | `api-version: 1.20` |
+| Paper API | `api-version: 26.1.2` |
 | Folia | Unterstützt |
 | Essentials | Benötigt (EssentialsX oder kompatibler Fork mit `net.ess3.api`) |
-| Java | JDK 21 |
+| Java | JDK 25 |
 
 ## Befehle
 
@@ -92,7 +92,7 @@ Verfügbare Platzhalter für `jail-time-reminder.message`:
 
 ### Voraussetzungen
 
-- JDK 21
+- JDK 25
 - VS Code mit `Extension Pack for Java`
 - Gradle Wrapper (`gradlew` / `gradlew.bat`)
 

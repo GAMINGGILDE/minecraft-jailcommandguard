@@ -3,9 +3,10 @@ plugins {
 }
 
 group = 'de.minecraftgilde'
-version = '1.0.7'
+version = '1.0.8'
 
-def paperApiVersion = '1.21.4-R0.1-SNAPSHOT'
+def pluginVersion = project.version.toString()
+def paperApiVersion = '26.1.2.build.66-stable'
 def essentialsxVersion = '2.21.2'
 
 repositories {
@@ -25,15 +26,23 @@ dependencies {
     }
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
-    options.release = 21
+    options.release = 25
     options.compilerArgs += ['-Xlint:deprecation', '-Xlint:removal']
 }
 
 tasks.processResources {
     filteringCharset = 'UTF-8'
+    inputs.property('version', pluginVersion)
+
     filesMatching('plugin.yml') {
-        expand(version: project.version)
+        expand(version: pluginVersion)
     }
 }
